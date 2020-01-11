@@ -1,0 +1,7 @@
+<div>
+    <!-- ['far', 'thumbs-up'] is an array that indicates the [prefix (regular), iconName (star)] -->
+    <!-- we need 2 icons here and an ng-if when each one displays -->
+    <fa-icon *ngIf="!liked" [icon]="['far','thumbs-up']" (click)="onLike()" [style.color]="'blue'"></fa-icon>
+    <fa-icon *ngIf="liked" icon="thumbs-up" (click)="onLike()" [style.color]="'blue'"></fa-icon>
+{{title}}
+</div>

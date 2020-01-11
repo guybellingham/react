@@ -1,0 +1,20 @@
+<div>
+    <!-- ['far', 'star'] is an array that indicates the [prefix (regular), iconName (star)] -->
+    <!-- we need 2 icons here and an ng-if when each one displays -->
+    <fa-icon *ngIf="starCount < 1" [icon]="['far','star']" (click)="onClick1()" [style.color]="'blue'"></fa-icon>
+    <fa-icon *ngIf="starCount > 0" icon="star" (click)="onClick1()" [style.color]="'blue'"></fa-icon>
+
+    <fa-icon *ngIf="starCount < 2" [icon]="['far','star']" (click)="onClick2()" [style.color]="'blue'"></fa-icon>
+    <fa-icon *ngIf="starCount > 1" icon="star" (click)="onClick2()" [style.color]="'blue'"></fa-icon>
+
+    <fa-icon *ngIf="starCount < 3" [icon]="['far','star']" (click)="onClick3()" [style.color]="'blue'"></fa-icon>
+    <fa-icon *ngIf="starCount > 2" icon="star" (click)="onClick3()" [style.color]="'blue'"></fa-icon>
+
+    <fa-icon *ngIf="starCount < 4" [icon]="['far','star']" (click)="onClick4()" [style.color]="'blue'"></fa-icon>
+    <fa-icon *ngIf="starCount > 3" icon="star" (click)="onClick4()" [style.color]="'blue'"></fa-icon>
+
+    <fa-icon *ngIf="starCount < 5" [icon]="['far','star']" (click)="onClick5()" [style.color]="'blue'"></fa-icon>
+    <fa-icon *ngIf="starCount > 4" icon="star" (click)="onClick5()" [style.color]="'blue'"></fa-icon>
+
+{{ starCount }}
+</div>
